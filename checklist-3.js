@@ -86,18 +86,47 @@
 
 // ৪. একটা ফাংশন লিখবে। এই ফাংশনের নাম হবে bestFriend তারপর সেই ফাংশনে ইনপুট প্যারামিটার হিসেবে একটা array নিবে। সেই array এর মধ্যে তোমার সব ফ্রেন্ডের নাম থাকবে। এখন তোমার কাজ হচ্ছে যে ফ্রেন্ড এর নাম সবচেয়ে বড় সেই ফ্রেন্ড এর নাম রিটার্ন করে দেয়া। এই ক্ষেত্রে তুমি নামটা অর্থাৎ ফ্রেন্ডের নাম (স্ট্রিং) রিটার্ন করতে হবে। 
 
-let friends = ['rohim', 'korim', 'jobbar', 'anwar', 'yousuf', 'abdul karim', 'shakil'];
+// let friends = ['rohim', 'korim', 'jobbar', 'anwar', 'yousuf', 'abdul karim', 'shakil'];
 
-function bestFriend(friends) {
-    let biggest = " ";
-    for (i = 0; i < friends.length; i++) {
-        let friend = friends[i];
-        if (friend.length > biggest.length) {
-            biggest = friend;
+// function bestFriend(friends) {
+//     let biggest = " ";
+//     for (i = 0; i < friends.length; i++) {
+//         let friend = friends[i];
+//         if (friend.length > biggest.length) {
+//             biggest = friend;
+//         }
+//     }
+//     return biggest;
+// }
+
+// let bigName = bestFriend(friends);
+// console.log(bigName);
+
+
+
+
+
+
+
+
+
+// ৫. এইটা একটু ট্রিকি হতে পারে। একটা array এর মধ্যে অনেকগুলা সংখ্যা থাকবে। তোমার কাজ হচ্ছে সংখ্যা গুলা একটার পর একটা করে চেক করা। এবং সংখ্যা গুলা যদি পজিটিভ সংখ্যা হয়। অর্থাৎ শূন্য বা শূন্যের চাইতে বড় হয় তাহলে সেগুলাকে কোন একটা array এর মধ্যে রাখবে। আর যদি নেগেটিভ সংখ্যা হয়। তাহলে লুপটা স্টপ করে দিবে। এবং লুপ বন্ধ করার আগ পর্যন্ত যতগুলা পজিটিভ সংখ্যা পাওয়া গেছে। সেগুলা রিটার্ন করে দিবে। 
+
+
+function positiveNumber(array) {
+    let positiveArray = [];
+    for (i = 0; i < array.length; i++) {
+        let number = array[i];
+        if (number >= 0) {
+            positiveArray.push(number);
+        }
+        else {
+            break;
         }
     }
-    return biggest;
+    return positiveArray;
 }
 
-let bigName = bestFriend(friends);
-console.log(bigName);
+let array = [4, 53, 2, 64, 46, 77, 34, -344, 5, 634, 22, 33, 23];
+const result = positiveNumber(array);
+console.log(result);
