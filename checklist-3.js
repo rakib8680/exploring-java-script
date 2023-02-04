@@ -113,20 +113,58 @@
 // ৫. এইটা একটু ট্রিকি হতে পারে। একটা array এর মধ্যে অনেকগুলা সংখ্যা থাকবে। তোমার কাজ হচ্ছে সংখ্যা গুলা একটার পর একটা করে চেক করা। এবং সংখ্যা গুলা যদি পজিটিভ সংখ্যা হয়। অর্থাৎ শূন্য বা শূন্যের চাইতে বড় হয় তাহলে সেগুলাকে কোন একটা array এর মধ্যে রাখবে। আর যদি নেগেটিভ সংখ্যা হয়। তাহলে লুপটা স্টপ করে দিবে। এবং লুপ বন্ধ করার আগ পর্যন্ত যতগুলা পজিটিভ সংখ্যা পাওয়া গেছে। সেগুলা রিটার্ন করে দিবে। 
 
 
-function positiveNumber(array) {
-    let positiveArray = [];
-    for (i = 0; i < array.length; i++) {
-        let number = array[i];
-        if (number >= 0) {
-            positiveArray.push(number);
-        }
-        else {
-            break;
-        }
-    }
-    return positiveArray;
-}
+// function positiveNumber(array) {
+//     let positiveArray = [];
+//     for (i = 0; i < array.length; i++) {
+//         let number = array[i];
+//         if (number >= 0) {
+//             positiveArray.push(number);
+//         }
+//         else {
+//             break;
+//         }
+//     }
+//     return positiveArray;
+// }
 
-let array = [4, 53, 2, 64, 46, 77, 34, -344, 5, 634, 22, 33, 23];
-const result = positiveNumber(array);
-console.log(result);
+// let array = [4, 53, 2, 64, 46, 77, 34, -344, 5, 634, 22, 33, 23];
+// const result = positiveNumber(array);
+// console.log(result);
+
+
+
+
+
+
+
+
+
+
+// 6. একটা ফাংশন লিখো। সেটার মধ্যে তিনটা প্যারামিটার নিবে। এই তিনটা প্যারামিটার হবে কোন একটা ত্রিভুজের তিনটা বাহু এর দৈর্য্য। এখন তোমার কাজ হচ্ছে ফাংশনের ভিতরে কিছু হিসাব নিকাশ করে ত্রিভুজের area (আয়তন) বের করা। কোন একটা ত্রিভুজের তিনটা বাহুর দৈর্য্য দেয়া থাকলে সেটা থেকে কিভাবে আয়তন বের করতে হয় সেই ফর্মুলা গুগল থেকে খুঁজে বের করো। 
+
+
+// function calculateArea(a, b, c) {
+//     const s = (a + b + c) / 2;
+//     const area = Math.sqrt(s * 
+//         (s - a) * (s - b) * (s - c));
+//     return area;
+// }
+
+
+// let firstSide = 6;
+// let secondSide = 9;
+// let thirdSide = 12;
+// const result = calculateArea(firstSide, secondSide, thirdSide);
+// console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+// 7. কোন একটা সংখ্যা প্রাইম সংখ্যা (prime number) কিনা। সেটা চেক করার একটা ফাংশন লিখো। 
