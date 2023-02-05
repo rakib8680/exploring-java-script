@@ -168,3 +168,17 @@
 
 
 // 7. কোন একটা সংখ্যা প্রাইম সংখ্যা (prime number) কিনা। সেটা চেক করার একটা ফাংশন লিখো। 
+
+function getPrimeNumber(number) {
+    console.log( number,' is a Prime number,');
+    if (number % 2 != 0 && number % 3 != 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+let number = 17;
+const result = getPrimeNumber(number);
+console.log(result);
